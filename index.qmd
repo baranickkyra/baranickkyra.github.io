@@ -1,6 +1,6 @@
 ---
 title: "baranickkyra.github.io"
-title: Finley Malloc
+title: Kyra Baranick
 image: profile.png
 about:
   template: jolla
@@ -10,12 +10,9 @@ links:
     - icon: LinkedIn
       text: LinkedIn
       href: https://www.linkedin.com/in/kyra-baranick-a15028309/
+      text: Email
+      href: mailto:baranickkyra@gmail.com
 ---
 
-```{r}
-
-
-
-```
 
 
