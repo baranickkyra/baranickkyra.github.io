@@ -7,7 +7,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: Resume
+      - href: aboutme.qmd
+        text: About Me
+      - href: intrests.qmd
+        text: Interests
 
 format:
   html:
@@ -16,7 +23,9 @@ format:
       - brand
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 output-dir: docs
+
 
