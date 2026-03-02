@@ -1,6 +1,5 @@
 ---
 title: "baranickkyra.github.io"
----usethis::git_default_branch_rename(from = "master", to = "main")
 ---
 
 This is a Quarto website.
