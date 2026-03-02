@@ -1,18 +1,24 @@
 ---
 title: "baranickkyra.github.io"
-title: Kyra Baranick
-image: profile.png
+image: JpegProfile.jpg
 about:
   template: jolla
   image-width: 10em
   image-shape: round
-links:
-    - icon: LinkedIn
-      text: LinkedIn
+  links: 
+    - text: LinkedIn
+      icon: linkedin
       href: https://www.linkedin.com/in/kyra-baranick-a15028309/
-      text: Email
+    - text: Email
+      icon: envelope
       href: mailto:baranickkyra@gmail.com
 ---
+
+Hi! Welcome to my site. 
+
+
+
+
 
 
 
