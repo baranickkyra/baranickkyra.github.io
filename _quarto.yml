@@ -13,7 +13,7 @@ website:
         text: Resume
       - href: aboutme.qmd
         text: About Me
-      - href: intrests.qmd
+      - href: interests.qmd
         text: Interests
 
 format:
