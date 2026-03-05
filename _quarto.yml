@@ -1,6 +1,7 @@
+
 project:
   type: website
-
+  output-dir: docs
 website:
   title: "baranickkyra.github.io"
   navbar:
@@ -26,6 +27,6 @@ format:
     page-layout: full
 
 editor: visual
-output-dir: docs
+
 
 
