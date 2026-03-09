@@ -2,6 +2,8 @@
 project:
   type: website
   output-dir: docs
+  resources: 
+  - resume.pdf
 website:
   title: "baranickkyra.github.io"
   navbar:
@@ -10,12 +12,10 @@ website:
         text: Home
       - href: projects.qmd
         text: Projects
-      - href: resume.qmd
-        text: Resume
       - href: aboutme.qmd
         text: About Me
       - href: interests.qmd
-        text: Interests
+        text: Field/Lab Work
 
 format:
   html:

@@ -1,5 +1,5 @@
 ---
-title: "baranickkyra.github.io"
+title: "Kyra Baranick"
 image: JpegProfile.jpg
 about:
   template: jolla
@@ -12,6 +12,9 @@ about:
     - text: Email
       icon: envelope
       href: mailto:baranickkyra@gmail.com
+    - text: Resume 
+      href: resume.pdf
+      
 ---
 
 Hi! Welcome to my site. 

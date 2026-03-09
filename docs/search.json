@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Soil Physical Properties and Water Purity\n\n\nResearched how soil physical properties influence the contamination and purity of groundwater.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -9,8 +16,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "baranickkyra.github.io",
+    "title": "Kyra Baranick",
     "section": "",
     "text": "Hi! Welcome to my site."
+  },
+  {
+    "objectID": "Projects/Soil.html",
+    "href": "Projects/Soil.html",
+    "title": "Soil Physical Properties and Water Purity",
+    "section": "",
+    "text": "Overview\nHow do water bottle companies “mountain purity” images reflect the actual characteristics of mountain filtered ground water as compared to ground water filtered through soil at sea level \nWhat properties of soil contribute to the purity of water in each location?\nGround water is an extremely important natural resource in California as it makes up 40% of our municipal water supply and up to 60% in drought years. I have noticed throughout my life that bottled water companies like to show images of mountains on their packaging and use words like “natural spring water” in order to get their customers to associate their water with being clean, pure and fresh. In my project I aim to investigate how the properties of mountain soil in Mount Whitney influence the quality of water as compared to the soil near and around UCSB.\n\n\nFinal Presentation"
   }
 ]

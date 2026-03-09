@@ -1,0 +1,18 @@
+---
+title: "Soil Physical Properties and Water Purity"
+description: "Researched how soil physical properties influence the contamination and purity of groundwater."
+image: sierra.png
+toc: true
+---
+
+# Overview
+
+How do water bottle companies "mountain purity” images reflect the actual characteristics of mountain filtered ground water as compared to ground water filtered through soil at sea level 
+
+What properties of soil contribute to the purity of water in each location?
+
+Ground water is an extremely important natural resource in California as it makes up 40% of our municipal water supply and up to 60% in drought years. I have noticed throughout my life that bottled water companies like to show images of mountains on their packaging and use words like “natural spring water” in order to get their customers to associate their water with being clean, pure and fresh. In my project I aim to investigate how the properties of mountain soil in Mount Whitney influence the quality of water as compared to the soil near and around UCSB.
+
+# Final Presentation
+
+<video controls width="700"> <source src="files/Soilvideo.mp4" type=video/mp4> </video>

@@ -1,3 +1,17 @@
 ---
-title: "My Projects"
+title: "Projects"
+listing: 
+  contents: Projects
+  sort: false
+  type: grid
+  image-align: right
+  max-description-length: 350
+  date-format: medium
+  categories: false
+page-layout: article
+freeze: auto
+editor: source
+toc: false
 ---
+
+# 
