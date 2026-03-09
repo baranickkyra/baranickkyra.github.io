@@ -5,7 +5,7 @@ project:
   resources: 
   - resume.pdf
 website:
-  title: "baranickkyra.github.io"
+  title: "Kyra Baranick"
   navbar:
     left:
       - href: index.qmd

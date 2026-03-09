@@ -14,14 +14,12 @@ about:
       href: mailto:baranickkyra@gmail.com
     - text: Resume 
       href: resume.pdf
-      
 ---
 
-Hi! Welcome to my site. 
+Hi, welcome to my site.
 
+I’m Kyra Baranick, a Hydrologic Sciences and Policy student at UC Santa Barbara who loves digging into how water moves through landscapes and how people interact with it. I split my time between coding in R, studying water movement, and getting muddy in the field collecting soil, seawater, and phytoplankton samples.
 
+I’m especially interested in groundwater, flood behavior, and the big, messy questions around water supply in California.
 
-
-
-
-
+When I’m not working on research or class projects, you’ll usually find me exploring California’s water infrastructure, hiking around the coast, or hanging out with friends. This site is a place to share my projects, fieldwork, and the things I’m learning along the way.

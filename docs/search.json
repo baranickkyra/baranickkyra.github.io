@@ -4,7 +4,21 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Soil Physical Properties and Water Purity\n\n\nResearched how soil physical properties influence the contamination and purity of groundwater.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Food Desert Mapping\n\n\nReport and maps of food decrt in correlation with other geogrpahic and socioeconomic factors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Physical Properties and Water Purity\n\n\nResearched how soil physical properties influence the contamination and purity of groundwater.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Projects/foodinsecurity.html",
+    "href": "Projects/foodinsecurity.html",
+    "title": "Food Desert Mapping",
+    "section": "",
+    "text": "Overview\nIn a state with a large population and limited natural resources, ensuring that all residents have access to healthy, affordable food is a persistent challenge. Many communities experience poor health outcomes and resource inaccessibility, especially in areas known as food deserts (places where access to supermarkets and nutritious food options is severely limited). Because food access is a key determinant of overall health, this project explores how food deserts in California intersect with broader geographic and socioeconomic factors. By overlaying spatial data on median income, water scarcity, and community health indicators, the maps in this project highlight how these variables interact and contribute to systemic disparities in access to nutritious food. \n\n\nReport and Maps\n&lt;iframe src=“files/foodinsecurity.pdf” width=“100%” height=“600px&gt;"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kyra Baranick",
+    "section": "",
+    "text": "Hi, welcome to my site.\nI’m Kyra Baranick, a Hydrologic Sciences and Policy student at UC Santa Barbara who loves digging into how water moves through landscapes and how people interact with it. I split my time between coding in R, studying water movement, and getting muddy in the field collecting soil, seawater, and phytoplankton samples.\nI’m especially interested in groundwater, flood behavior, and the big, messy questions around water supply in California.\nWhen I’m not working on research or class projects, you’ll usually find me exploring California’s water infrastructure, hiking around the coast, or hanging out with friends. This site is a place to share my projects, fieldwork, and the things I’m learning along the way."
   },
   {
     "objectID": "about.html",
@@ -12,13 +26,6 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Kyra Baranick",
-    "section": "",
-    "text": "Hi! Welcome to my site."
   },
   {
     "objectID": "Projects/Soil.html",
