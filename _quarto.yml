@@ -12,16 +12,18 @@ website:
         text: Home
       - href: projects.qmd
         text: Projects
-      - href: aboutme.qmd
-        text: About Me
+      - text: About Me
+        menu:
+          - href: mosaic.qmd
+            text: My Mosaic Art
+          - href: hikes.qmd
+            text: Favorite Hikes
       - href: interests.qmd
         text: Field/Lab Work
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: darkly
     css: styles.css
     toc: true
     page-layout: full

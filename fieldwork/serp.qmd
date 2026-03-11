@@ -1,0 +1,22 @@
+---
+title: "Serpentine Soil Sampling"
+description: "Taking field soil samples to evaluate whether we can use plant traits to map soil mineralogy from remotely sensed imagery."
+image: serpimage.png
+toc: true
+---
+
+# Serpentine Soils & Plant Indicators
+
+Serpentine soils are some of the harshest environments in California. They are low in essential nutrients, high in heavy metals, and notoriously difficult for plants to thrive in. At Sedgwick Reserve, these extreme soils sit right beside more typical sedimentary units, creating a perfect natural experiment for studying how geology shapes plant communities.
+
+# Can Plants Reveal What’s Beneath the Surface?
+
+During NASA’s SHIFT campaign, researchers measured plant traits across these contrasting geologic units while AVIRIS‑NG collected weekly airborne imagery. Because plants growing on serpentinite often show distinct physiological signatures, their leaves may act as indicators of the soil chemistry below. Building on this work, I’m collecting soil samples from existing SHIFT plots to measure elemental concentrations and directly link them to foliar chemistry. By connecting geology → soils → plant traits, this project tests whether remotely sensed plant trait maps can be used to infer subsurface soil and geochemical properties
+
+# Some fun Field Photos
+
+
+<img src="fieldfiles/serp1.jpeg" width="700"/>
+<img src="fieldfiles/serp2.jpg" width="700"/>
+<img src="fieldfiles/serp3.jpeg" width="700"/>
+<img src="fieldfiles/serp4.jpeg" width="700"/>

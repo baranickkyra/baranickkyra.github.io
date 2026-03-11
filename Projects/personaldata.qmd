@@ -1,0 +1,90 @@
+---
+title: "What I have been Working on in RStudio"
+description: "In Winter of 2026 I learned how to code in RStudio. Click here to see some of my practice recreating data visuals. "
+image: rstudio.png
+toc: true
+---
+
+# Recreating an Existing Figure  
+
+This code chunk shows how I rebuilt a figure from the original project using only the published plot and the underlying dataset as references. I didn’t have access to the original code, so I recreated the visualization by matching its structure, aesthetics, and variables through careful inspection.
+
+```{r}
+#| label: Reading data 
+#| message: false # getting rid of  messages 
+#| warning: false # getting rid of warnings 
+library(tidyverse) # reading in the tidyverse
+library(janitor) # reading janitor package 
+library(dplyr) # reading in dyplr package 
+library(rstatix) # reading in rstatix package
+library(flextable) # reading in flextable package 
+library(lubridate) # reading in the lubridate package 
+
+temp <- read_csv("temp_2024.csv") # Reading in data for problem 4 as an object called temp
+
+```
+
+```{r}
+temp_clean <- temp |>
+  
+ 
+  clean_names() |>
+  
+ 
+  mutate(year = year(date_local)) |>
+  
+  
+  filter(site %in% c("NAPL", "SCDI", "IVEE") &
+           year == "2024") |>
+  
+  
+  mutate(site = case_when(
+    site == "IVEE" ~ "Isla Vista",
+    site == "NAPL" ~ "Naples",
+    site == "SCDI" ~ "Santa Cruz - Diablo"
+  )) |>
+  
+
+  group_by(site, date_local) |> 
+  summarize(mean_daily = mean(temp_c)) |> 
+  ungroup() 
+  
+
+
+  
+  
+  
+```
+
+```{r}
+library(ggplot2)
+
+ggplot(temp_clean, aes(x = date_local,  # x axis using adte local data 
+                       y = mean_daily, # y axis using mean daily data
+                       color = site)) + # making different colors for each site 
+  geom_line() +  # only one geometry which is a line
+  labs(
+    x = "Date", # labeling x and y axis 
+    y = "Mean daily temperature (°C)", # labeling x and y axis
+    title = "Reef Bottom Tempratures at Isla Vista, Naples, Santa Cruz Island", # Adding a subtitle to describe categories
+    color = "Site", #  using different colors for each site 
+    caption = "Data source : Santa Barbara Coastal LTER" # adding a caption to the bottom to show where the data was sourced 
+  ) +
+  scale_color_manual(values = c( # changing the colors from the default 
+    "Isla Vista" = "red", # making "Isla Vista" red 
+    "Naples" = "yellow", # making "Naples" yellow 
+    "Santa Cruz - Diablo" = "green" # making "Santa Cruz" green 
+  )) +
+  scale_x_date(
+               date_labels = "%b %y")+ # format as June 24, Mar 24 etc. 
+  theme_minimal() +  # Changing the theme form the default 
+  theme( 
+    legend.position = c(0.2, 0.8), # moving the legend  to the position it should be in 
+    plot.title.position = "plot",  # left-align title cause I thought it looked better 
+    panel.grid.major = element_blank(), # removing major gridline 
+    panel.grid.minor  = element_blank(),# removing minor gridline 
+    panel.border = element_rect(), # adding the plain black border
+    axis.ticks = (element_line(color = "black")) # adding ticks to the x and y axis 
+  )
+
+```

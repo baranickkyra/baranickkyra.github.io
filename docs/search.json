@@ -4,14 +4,91 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Food Desert Mapping\n\n\nReport and maps of food desert in correlation with other geogrpahic and socioeconomic factors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Physical Properties and Water Purity\n\n\nResearched how soil physical properties influence the contamination and purity of groundwater.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Food Desert Mapping\n\n\nReport and maps of food desert in correlation with other geogrpahic and socioeconomic factors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat I have been Working on in RStudio\n\n\nIn Winter of 2026 I learned how to code in RStudio. Click here to see some of my practice recreating data visuals.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSoil Physical Properties and Water Purity\n\n\nResearched how soil physical properties influence the contamination and purity of groundwater.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "Projects/foodinsecurity.html",
-    "href": "Projects/foodinsecurity.html",
-    "title": "Food Desert Mapping",
+    "objectID": "Projects/personaldata.html",
+    "href": "Projects/personaldata.html",
+    "title": "What I have been Working on in RStudio",
     "section": "",
-    "text": "Overview\nIn a state with a large population and limited natural resources, ensuring that all residents have access to healthy, affordable food is a persistent challenge. Many communities experience poor health outcomes and resource inaccessibility, especially in areas known as food deserts (places where access to supermarkets and nutritious food options is severely limited). Because food access is a key determinant of overall health, this project explores how food deserts in California intersect with broader geographic and socioeconomic factors. By overlaying spatial data on median income, water scarcity, and community health indicators, the maps in this project highlight how these variables interact and contribute to systemic disparities in access to nutritious food. \n\n\nReport and Maps"
+    "text": "Recreating an Existing Figure\nThis code chunk shows how I rebuilt a figure from the original project using only the published plot and the underlying dataset as references. I didn’t have access to the original code, so I recreated the visualization by matching its structure, aesthetics, and variables through careful inspection.\n\nlibrary(tidyverse) # reading in the tidyverse\nlibrary(janitor) # reading janitor package \nlibrary(dplyr) # reading in dyplr package \nlibrary(rstatix) # reading in rstatix package\nlibrary(flextable) # reading in flextable package \nlibrary(lubridate) # reading in the lubridate package \n\ntemp &lt;- read_csv(\"temp_2024.csv\") # Reading in data for problem 4 as an object called temp\n\n\ntemp_clean &lt;- temp |&gt;\n  \n \n  clean_names() |&gt;\n  \n \n  mutate(year = year(date_local)) |&gt;\n  \n  \n  filter(site %in% c(\"NAPL\", \"SCDI\", \"IVEE\") &\n           year == \"2024\") |&gt;\n  \n  \n  mutate(site = case_when(\n    site == \"IVEE\" ~ \"Isla Vista\",\n    site == \"NAPL\" ~ \"Naples\",\n    site == \"SCDI\" ~ \"Santa Cruz - Diablo\"\n  )) |&gt;\n  \n\n  group_by(site, date_local) |&gt; \n  summarize(mean_daily = mean(temp_c)) |&gt; \n  ungroup() \n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by site and date_local.\nℹ Output is grouped by site.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(site, date_local))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\n\n\nlibrary(ggplot2)\n\nggplot(temp_clean, aes(x = date_local,  # x axis using adte local data \n                       y = mean_daily, # y axis using mean daily data\n                       color = site)) + # making different colors for each site \n  geom_line() +  # only one geometry which is a line\n  labs(\n    x = \"Date\", # labeling x and y axis \n    y = \"Mean daily temperature (°C)\", # labeling x and y axis\n    title = \"Reef Bottom Tempratures at Isla Vista, Naples, Santa Cruz Island\", # Adding a subtitle to describe categories\n    color = \"Site\", #  using different colors for each site \n    caption = \"Data source : Santa Barbara Coastal LTER\" # adding a caption to the bottom to show where the data was sourced \n  ) +\n  scale_color_manual(values = c( # changing the colors from the default \n    \"Isla Vista\" = \"red\", # making \"Isla Vista\" red \n    \"Naples\" = \"yellow\", # making \"Naples\" yellow \n    \"Santa Cruz - Diablo\" = \"green\" # making \"Santa Cruz\" green \n  )) +\n  scale_x_date(\n               date_labels = \"%b %y\")+ # format as June 24, Mar 24 etc. \n  theme_minimal() +  # Changing the theme form the default \n  theme( \n    legend.position = c(0.2, 0.8), # moving the legend  to the position it should be in \n    plot.title.position = \"plot\",  # left-align title cause I thought it looked better \n    panel.grid.major = element_blank(), # removing major gridline \n    panel.grid.minor  = element_blank(),# removing minor gridline \n    panel.border = element_rect(), # adding the plain black border\n    axis.ticks = (element_line(color = \"black\")) # adding ticks to the x and y axis \n  )"
+  },
+  {
+    "objectID": "interests.html",
+    "href": "interests.html",
+    "title": "Some fun Field and Lab Work",
+    "section": "",
+    "text": "I have been Having lots of fun this past year digging in the dirt collecting soil and water click through to learn about HABs in our oceans or Serpentine (Our state rock)!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoring HABs With SCCOOS\n\n\nWeekly sampling of harmful algal blooms. Learn about HABS here!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSerpentine Soil Sampling\n\n\nTaking field soil samples to evaluate whether we can use plant traits to map soil mineralogy from remotely sensed imagery.\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "fieldwork/serp.html",
+    "href": "fieldwork/serp.html",
+    "title": "Serpentine Soil Sampling",
+    "section": "",
+    "text": "Serpentine Soils & Plant Indicators\nSerpentine soils are some of the harshest environments in California. They are low in essential nutrients, high in heavy metals, and notoriously difficult for plants to thrive in. At Sedgwick Reserve, these extreme soils sit right beside more typical sedimentary units, creating a perfect natural experiment for studying how geology shapes plant communities.\n\n\nCan Plants Reveal What’s Beneath the Surface?\nDuring NASA’s SHIFT campaign, researchers measured plant traits across these contrasting geologic units while AVIRIS‑NG collected weekly airborne imagery. Because plants growing on serpentinite often show distinct physiological signatures, their leaves may act as indicators of the soil chemistry below. Building on this work, I’m collecting soil samples from existing SHIFT plots to measure elemental concentrations and directly link them to foliar chemistry. By connecting geology → soils → plant traits, this project tests whether remotely sensed plant trait maps can be used to infer subsurface soil and geochemical properties\n\n\nSome fun Field Photos"
+  },
+  {
+    "objectID": "aboutme/mosaic.html",
+    "href": "aboutme/mosaic.html",
+    "title": "My Mosaic Art",
+    "section": "",
+    "text": "I enjoy making mosaic art. Over the years, I’ve experimented with different materials, colors, and patterns, and each project has taught me something new about patience, texture, and design. Here are a few of my past pieces, each one with its own little story and creative process behind it. All materials come form thrifted and recycled glassware that I shape using a scoring and glass cutting method.\n\n\nThis mosaic depicts a couple based on a reference image. I loved interpreting the connection through my own style and the way I arranged each piece of glass. Creating it was a rewarding process, but giving it as a gift and seeing how much it meant was the best part.\n\n\n\n\nI created a mosaic design on this bedframe, using color and pattern to turn a simple piece of furniture into something expressive and personal. Waking up and seeing it every morning makes me genuinely happy because it’s a reminder of the time and care I put into it.\n\n\n\n\nFor my fist ever experience working with glass mosaics, I covered this pot, experimenting with texture and shape to give it a unique, decorative surface. Though this project I learned how to work on curved surfaces and how to use a glass cutter/nipper."
+  },
+  {
+    "objectID": "aboutme/mosaic.html#my-favorite-piece",
+    "href": "aboutme/mosaic.html#my-favorite-piece",
+    "title": "My Mosaic Art",
+    "section": "",
+    "text": "This mosaic depicts a couple based on a reference image. I loved interpreting the connection through my own style and the way I arranged each piece of glass. Creating it was a rewarding process, but giving it as a gift and seeing how much it meant was the best part."
+  },
+  {
+    "objectID": "aboutme/mosaic.html#my-biggest-project-yet",
+    "href": "aboutme/mosaic.html#my-biggest-project-yet",
+    "title": "My Mosaic Art",
+    "section": "",
+    "text": "I created a mosaic design on this bedframe, using color and pattern to turn a simple piece of furniture into something expressive and personal. Waking up and seeing it every morning makes me genuinely happy because it’s a reminder of the time and care I put into it."
+  },
+  {
+    "objectID": "aboutme/mosaic.html#my-first-project",
+    "href": "aboutme/mosaic.html#my-first-project",
+    "title": "My Mosaic Art",
+    "section": "",
+    "text": "For my fist ever experience working with glass mosaics, I covered this pot, experimenting with texture and shape to give it a unique, decorative surface. Though this project I learned how to work on curved surfaces and how to use a glass cutter/nipper."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "aboutme/hikes.html",
+    "href": "aboutme/hikes.html",
+    "title": "Some Cool Hikes",
+    "section": "",
+    "text": "Why I love hiking\nI love getting outside and hiking whenever I have free time — it’s my favorite way to reset and clear my mind. Being on a trail always reminds me how good it feels to slow down and be surrounded by nature. Here are some of my favorites!\n\n\nMount Langley\nMy mom and I originally planned to take three days (2 nights) to hike Mount Langley, but once we were out there, we ended up speeding up and down the mountain in just 2 days. It’s one of my favorite memories from laughing at how fast the plan changed, to feeling proud of what we pulled off.\n\n\n\nHalf Dome\nWe started our Half Dome hike at 3 a.m., moving through the dark with headlamps and that mix of nerves and excitement you only get on big adventures. The cables were the most fun part for me, and it was amazing watching people in our group face their fears and push themselves all the way to the top.\n\n\n\nMount Baldy\nThis one was only meant to be a training hike for mount Langley but it ended up being one of my favorites. We started the day at the base of the hike in Los Angeles hiked 9 miles and got to take the ski lifts down the rest of the hike."
+  },
+  {
+    "objectID": "aboutme/xyz.html",
+    "href": "aboutme/xyz.html",
+    "title": "Some Cool Hikes",
+    "section": "",
+    "text": "Why I love hiking\nI love getting outside and hiking whenever I have free time — it’s my favorite way to reset and clear my mind. Being on a trail always reminds me how good it feels to slow down and be surrounded by nature. Here are some of my favorites!\n\n\nMount Langley\nMy mom and I originally planned to take three days (2 nights) to hike Mount Langley, but once we were out there, we ended up speeding up and down the mountain in just one night (2 days). It’s one of my favorite memories from laughing at how fast the plan changed, to feeling proud of what we pulled off.\n\n\nHalf Dome\nWe started our Half Dome hike at 3 a.m., moving through the dark with headlamps and that mix of nerves and excitement you only get on big adventures. The cables were the most fun part for me, and it was amazing watching people in our group face their fears and push themselves all the way to the top.\n\n\nMount Baldy\nThis one was only meant to be a training hike for mount Langley but it ended up being one of my favorites. We started the day at the base of the hike in Los Angeles hiked 9 miles and got to take the ski lifts down the rest of the hike."
+  },
+  {
+    "objectID": "fieldwork/HAB.html",
+    "href": "fieldwork/HAB.html",
+    "title": "Monitoring HABs With SCCOOS",
+    "section": "",
+    "text": "The Southern California Coastal Ocean Observing System (SCCOOS) is a regional network that monitors the health of our coastal ocean. They collect data on currents, water quality, plankton, HABs, and more to help scientists and the public understand what’s happening along our coastline in real time. I am a research assistant for SCCOOS!"
+  },
+  {
+    "objectID": "fieldwork/HAB.html#me-counting-santa-barbara-coastal-habs",
+    "href": "fieldwork/HAB.html#me-counting-santa-barbara-coastal-habs",
+    "title": "Monitoring HABs With SCCOOS",
+    "section": "Me counting Santa Barbara coastal HABS",
+    "text": "Me counting Santa Barbara coastal HABS"
   },
   {
     "objectID": "index.html",
@@ -21,11 +98,11 @@
     "text": "Hi, welcome to my site.\nI’m Kyra Baranick, a Hydrologic Sciences and Policy student at UC Santa Barbara who loves digging into how water moves through landscapes and how people interact with it. I split my time between coding in R, studying water movement, and getting muddy in the field collecting soil, seawater, and phytoplankton samples.\nI’m especially interested in groundwater, flood behavior, and the big, messy questions around water supply in California.\nWhen I’m not working on research or class projects, you’ll usually find me exploring California’s water infrastructure, hiking around the coast, or hanging out with friends. This site is a place to share my projects, fieldwork, and the things I’m learning along the way."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "Projects/foodinsecurity.html",
+    "href": "Projects/foodinsecurity.html",
+    "title": "Food Desert Mapping",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Overview\nIn a state with a large population and limited natural resources, ensuring that all residents have access to healthy, affordable food is a persistent challenge. Many communities experience poor health outcomes and resource inaccessibility, especially in areas known as food deserts (places where access to supermarkets and nutritious food options is severely limited). Because food access is a key determinant of overall health, this project explores how food deserts in California intersect with broader geographic and socioeconomic factors. By overlaying spatial data on median income, water scarcity, and community health indicators, the maps in this project highlight how these variables interact and contribute to systemic disparities in access to nutritious food. \n\n\nReport and Maps"
   },
   {
     "objectID": "Projects/Soil.html",

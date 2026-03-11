@@ -1,3 +1,17 @@
 ---
 title: "Some fun Field and Lab Work"
+listing: 
+  contents: fieldwork
+  sort: false
+  type: grid
+  image-align: right
+  max-description-length: 350
+  date-format: medium
+  categories: false
+page-layout: article
+freeze: auto
+editor: source
+toc: false
 ---
+
+### I have been Having lots of fun this past year digging in the dirt collecting soil and water click through to learn about HABs in our oceans or Serpentine (Our state rock)!

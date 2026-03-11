@@ -3,7 +3,15 @@
     "listing": "/projects.html",
     "items": [
       "/Projects/foodinsecurity.html",
+      "/Projects/personaldata.html",
       "/Projects/Soil.html"
+    ]
+  },
+  {
+    "listing": "/interests.html",
+    "items": [
+      "/fieldwork/HAB.html",
+      "/fieldwork/serp.html"
     ]
   }
 ]
