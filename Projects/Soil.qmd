@@ -15,4 +15,8 @@ Ground water is an extremely important natural resource in California as it make
 
 # Final Presentation
 
-<video controls width="700"> <source src="files/Soilvideo.mp4" type=video/mp4> </video>
+<video controls width="700">
+
+<source src="files/Soilvideo.mp4" type=video/mp4>
+
+</video>
