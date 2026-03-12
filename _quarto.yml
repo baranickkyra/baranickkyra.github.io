@@ -14,9 +14,9 @@ website:
         text: Projects
       - text: About Me
         menu:
-          - href: mosaic.qmd
+          - href: aboutme/mosaic.qmd
             text: My Mosaic Art
-          - href: hikes.qmd
+          - href: aboutme/hikes.qmd
             text: Favorite Hikes
       - href: interests.qmd
         text: Field/Lab Work
