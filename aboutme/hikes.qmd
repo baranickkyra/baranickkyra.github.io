@@ -5,7 +5,7 @@ format: html
 
 # Why I love hiking
 
-I love getting outside and hiking whenever I have free time — it’s my favorite way to reset and clear my mind. Being on a trail always reminds me how good it feels to slow down and be surrounded by nature. Here are some of my favorites!
+I love getting outside and hiking whenever I have free time . It’s my favorite way to reset and clear my mind. Being on a trail always reminds me how good it feels to slow down and be surrounded by nature. Here are some of my favorites!
 
 # Mount Langley
 
