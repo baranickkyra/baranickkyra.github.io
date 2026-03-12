@@ -1,6 +1,6 @@
 ---
 title: "Food Desert Mapping"
-description: "Report and maps of food desert in correlation with other geogrpahic and socioeconomic factors"
+description: "Report and maps of food desert in correlation with other geographic and socioeconomic factors"
 image: fooddes.png
 toc: true
 ---
